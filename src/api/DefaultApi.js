@@ -158,7 +158,7 @@
       var formParams = {
       };
 
-      var authNames = ['oauth_2_0_client_credentials', 'oauth_2_0_authorization_code'];
+      var authNames = ['oauth_2_0_authorization_code', 'oauth_2_0_client_credentials'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = BillingProfileDetails;
@@ -216,7 +216,7 @@
       var formParams = {
       };
 
-      var authNames = ['oauth_2_0_client_credentials', 'oauth_2_0_authorization_code'];
+      var authNames = ['oauth_2_0_authorization_code', 'oauth_2_0_client_credentials'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = BillingProfileEligibility;

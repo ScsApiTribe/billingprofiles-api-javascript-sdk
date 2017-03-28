@@ -64,8 +64,8 @@
      * @type {Array.<String>}
      */
     this.authentications = {
-      'oauth_2_0_client_credentials': {type: 'oauth2'},
-      'oauth_2_0_authorization_code': {type: 'oauth2'}
+      'oauth_2_0_authorization_code': {type: 'oauth2'},
+      'oauth_2_0_client_credentials': {type: 'oauth2'}
     };
     /**
      * The default HTTP headers to be included for all API calls.

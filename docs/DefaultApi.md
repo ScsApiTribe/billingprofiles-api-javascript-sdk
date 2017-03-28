@@ -82,13 +82,13 @@ Name | Type | Description  | Notes
 var BillingProfiles = require('billing_profiles');
 var defaultClient = BillingProfiles.ApiClient.default;
 
-// Configure OAuth2 access token for authorization: oauth_2_0_client_credentials
-var oauth_2_0_client_credentials = defaultClient.authentications['oauth_2_0_client_credentials'];
-oauth_2_0_client_credentials.accessToken = 'YOUR ACCESS TOKEN';
-
 // Configure OAuth2 access token for authorization: oauth_2_0_authorization_code
 var oauth_2_0_authorization_code = defaultClient.authentications['oauth_2_0_authorization_code'];
 oauth_2_0_authorization_code.accessToken = 'YOUR ACCESS TOKEN';
+
+// Configure OAuth2 access token for authorization: oauth_2_0_client_credentials
+var oauth_2_0_client_credentials = defaultClient.authentications['oauth_2_0_client_credentials'];
+oauth_2_0_client_credentials.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new BillingProfiles.DefaultApi();
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth_2_0_client_credentials](../README.md#oauth_2_0_client_credentials), [oauth_2_0_authorization_code](../README.md#oauth_2_0_authorization_code)
+[oauth_2_0_authorization_code](../README.md#oauth_2_0_authorization_code), [oauth_2_0_client_credentials](../README.md#oauth_2_0_client_credentials)
 
 ### HTTP request headers
 
@@ -144,13 +144,13 @@ Name | Type | Description  | Notes
 var BillingProfiles = require('billing_profiles');
 var defaultClient = BillingProfiles.ApiClient.default;
 
-// Configure OAuth2 access token for authorization: oauth_2_0_client_credentials
-var oauth_2_0_client_credentials = defaultClient.authentications['oauth_2_0_client_credentials'];
-oauth_2_0_client_credentials.accessToken = 'YOUR ACCESS TOKEN';
-
 // Configure OAuth2 access token for authorization: oauth_2_0_authorization_code
 var oauth_2_0_authorization_code = defaultClient.authentications['oauth_2_0_authorization_code'];
 oauth_2_0_authorization_code.accessToken = 'YOUR ACCESS TOKEN';
+
+// Configure OAuth2 access token for authorization: oauth_2_0_client_credentials
+var oauth_2_0_client_credentials = defaultClient.authentications['oauth_2_0_client_credentials'];
+oauth_2_0_client_credentials.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new BillingProfiles.DefaultApi();
 
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth_2_0_client_credentials](../README.md#oauth_2_0_client_credentials), [oauth_2_0_authorization_code](../README.md#oauth_2_0_authorization_code)
+[oauth_2_0_authorization_code](../README.md#oauth_2_0_authorization_code), [oauth_2_0_client_credentials](../README.md#oauth_2_0_client_credentials)
 
 ### HTTP request headers
 
