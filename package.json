@@ -1,6 +1,6 @@
 {
-  "name": "billing_profiles",
-  "version": "1.0",
+  "name": "billingprofiles_javascript_sdk",
+  "version": "1.0.14",
   "description": "ERROR_UNKNOWN",
   "license": "Apache-2.0",
   "main": "src/index.js",

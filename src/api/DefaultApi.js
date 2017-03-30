@@ -31,10 +31,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/BillingProfilesCollection'), require('../model/Error'), require('../model/BillingProfileDetails'), require('../model/BillingProfileEligibility'));
   } else {
     // Browser globals (root is window)
-    if (!root.BillingProfiles) {
-      root.BillingProfiles = {};
+    if (!root.BillingprofilesJavascriptSdk) {
+      root.BillingprofilesJavascriptSdk = {};
     }
-    root.BillingProfiles.DefaultApi = factory(root.BillingProfiles.ApiClient, root.BillingProfiles.BillingProfilesCollection, root.BillingProfiles.Error, root.BillingProfiles.BillingProfileDetails, root.BillingProfiles.BillingProfileEligibility);
+    root.BillingprofilesJavascriptSdk.DefaultApi = factory(root.BillingprofilesJavascriptSdk.ApiClient, root.BillingprofilesJavascriptSdk.BillingProfilesCollection, root.BillingprofilesJavascriptSdk.Error, root.BillingprofilesJavascriptSdk.BillingProfileDetails, root.BillingprofilesJavascriptSdk.BillingProfileEligibility);
   }
 }(this, function(ApiClient, BillingProfilesCollection, Error, BillingProfileDetails, BillingProfileEligibility) {
   'use strict';
@@ -42,7 +42,7 @@
   /**
    * Default service.
    * @module api/DefaultApi
-   * @version 1.0
+   * @version 1.0.14
    */
 
   /**

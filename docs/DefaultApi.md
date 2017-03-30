@@ -1,4 +1,4 @@
-# BillingProfiles.DefaultApi
+# BillingprofilesJavascriptSdk.DefaultApi
 
 All URIs are relative to *https://api.swisscom.com/*
 
@@ -19,14 +19,14 @@ Method | HTTP request | Description
 
 ### Example
 ```javascript
-var BillingProfiles = require('billing_profiles');
-var defaultClient = BillingProfiles.ApiClient.default;
+var BillingprofilesJavascriptSdk = require('billingprofiles_javascript_sdk');
+var defaultClient = BillingprofilesJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth_2_0_client_credentials
 var oauth_2_0_client_credentials = defaultClient.authentications['oauth_2_0_client_credentials'];
 oauth_2_0_client_credentials.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new BillingProfiles.DefaultApi();
+var apiInstance = new BillingprofilesJavascriptSdk.DefaultApi();
 
 var bestForPayment = true; // Boolean | Determines whether to return only the identified best billing profile of the provided customer identifier. The best billing profile is always eligible for use with the Payments API and is owned by the customer specified. Currently, only the value \"true\" is supported. 
 
@@ -79,8 +79,8 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var BillingProfiles = require('billing_profiles');
-var defaultClient = BillingProfiles.ApiClient.default;
+var BillingprofilesJavascriptSdk = require('billingprofiles_javascript_sdk');
+var defaultClient = BillingprofilesJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth_2_0_authorization_code
 var oauth_2_0_authorization_code = defaultClient.authentications['oauth_2_0_authorization_code'];
@@ -90,7 +90,7 @@ oauth_2_0_authorization_code.accessToken = 'YOUR ACCESS TOKEN';
 var oauth_2_0_client_credentials = defaultClient.authentications['oauth_2_0_client_credentials'];
 oauth_2_0_client_credentials.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new BillingProfiles.DefaultApi();
+var apiInstance = new BillingprofilesJavascriptSdk.DefaultApi();
 
 var billingProfileId = "billingProfileId_example"; // String | The unique identifier used to identify a billing profile.  When using access tokens generated with Authorization Code grant, the request parameter must be \"me\" and the billingProfileId is extracted from the access token.  The value of the URI parameter must not contain spaces and should be URL encoded. 
 
@@ -141,8 +141,8 @@ Name | Type | Description  | Notes
 
 ### Example
 ```javascript
-var BillingProfiles = require('billing_profiles');
-var defaultClient = BillingProfiles.ApiClient.default;
+var BillingprofilesJavascriptSdk = require('billingprofiles_javascript_sdk');
+var defaultClient = BillingprofilesJavascriptSdk.ApiClient.default;
 
 // Configure OAuth2 access token for authorization: oauth_2_0_authorization_code
 var oauth_2_0_authorization_code = defaultClient.authentications['oauth_2_0_authorization_code'];
@@ -152,7 +152,7 @@ oauth_2_0_authorization_code.accessToken = 'YOUR ACCESS TOKEN';
 var oauth_2_0_client_credentials = defaultClient.authentications['oauth_2_0_client_credentials'];
 oauth_2_0_client_credentials.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new BillingProfiles.DefaultApi();
+var apiInstance = new BillingprofilesJavascriptSdk.DefaultApi();
 
 var billingProfileId = "billingProfileId_example"; // String | The unique identifier used to identify a billing profile.  When using access tokens generated with Authorization Code grant, the request parameter must be \"me\" and the billingProfileId is extracted from the access token.  The value of the URI parameter must not contain spaces and should be URL encoded. 
 

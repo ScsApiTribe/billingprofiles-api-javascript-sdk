@@ -31,17 +31,17 @@
     module.exports = factory(require('superagent'));
   } else {
     // Browser globals (root is window)
-    if (!root.BillingProfiles) {
-      root.BillingProfiles = {};
+    if (!root.BillingprofilesJavascriptSdk) {
+      root.BillingprofilesJavascriptSdk = {};
     }
-    root.BillingProfiles.ApiClient = factory(root.superagent);
+    root.BillingprofilesJavascriptSdk.ApiClient = factory(root.superagent);
   }
 }(this, function(superagent) {
   'use strict';
 
   /**
    * @module ApiClient
-   * @version 1.0
+   * @version 1.0.14
    */
 
   /**

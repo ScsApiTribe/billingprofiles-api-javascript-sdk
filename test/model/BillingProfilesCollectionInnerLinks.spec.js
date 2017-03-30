@@ -31,15 +31,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.BillingProfiles);
+    factory(root.expect, root.BillingprofilesJavascriptSdk);
   }
-}(this, function(expect, BillingProfiles) {
+}(this, function(expect, BillingprofilesJavascriptSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new BillingProfiles.BillingProfilesCollectionInnerLinks();
+    instance = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks();
   });
 
   var getProperty = function(object, getter, property) {
@@ -61,19 +61,19 @@
   describe('BillingProfilesCollectionInnerLinks', function() {
     it('should create an instance of BillingProfilesCollectionInnerLinks', function() {
       // uncomment below and update the code to test BillingProfilesCollectionInnerLinks
-      //var instane = new BillingProfiles.BillingProfilesCollectionInnerLinks();
-      //expect(instance).to.be.a(BillingProfiles.BillingProfilesCollectionInnerLinks);
+      //var instane = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks();
+      //expect(instance).to.be.a(BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks);
     });
 
     it('should have the property rel (base name: "rel")', function() {
       // uncomment below and update the code to test the property rel
-      //var instane = new BillingProfiles.BillingProfilesCollectionInnerLinks();
+      //var instane = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks();
       //expect(instance).to.be();
     });
 
     it('should have the property href (base name: "href")', function() {
       // uncomment below and update the code to test the property href
-      //var instane = new BillingProfiles.BillingProfilesCollectionInnerLinks();
+      //var instane = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks();
       //expect(instance).to.be();
     });
 

@@ -31,10 +31,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.BillingProfiles) {
-      root.BillingProfiles = {};
+    if (!root.BillingprofilesJavascriptSdk) {
+      root.BillingprofilesJavascriptSdk = {};
     }
-    root.BillingProfiles.BillingProfileEligibility = factory(root.BillingProfiles.ApiClient);
+    root.BillingprofilesJavascriptSdk.BillingProfileEligibility = factory(root.BillingprofilesJavascriptSdk.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -45,7 +45,7 @@
   /**
    * The BillingProfileEligibility model module.
    * @module model/BillingProfileEligibility
-   * @version 1.0
+   * @version 1.0.14
    */
 
   /**

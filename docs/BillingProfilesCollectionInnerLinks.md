@@ -1,4 +1,4 @@
-# BillingProfiles.BillingProfilesCollectionInnerLinks
+# BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks
 
 ## Properties
 Name | Type | Description | Notes

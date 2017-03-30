@@ -39,9 +39,9 @@
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
    * <pre>
-   * var BillingProfiles = require('index'); // See note below*.
-   * var xxxSvc = new BillingProfiles.XxxApi(); // Allocate the API class we're going to use.
-   * var yyyModel = new BillingProfiles.Yyy(); // Construct a model instance.
+   * var BillingprofilesJavascriptSdk = require('index'); // See note below*.
+   * var xxxSvc = new BillingprofilesJavascriptSdk.XxxApi(); // Allocate the API class we're going to use.
+   * var yyyModel = new BillingprofilesJavascriptSdk.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -53,8 +53,8 @@
    * <p>
    * A non-AMD browser application (discouraged) might do something like this:
    * <pre>
-   * var xxxSvc = new BillingProfiles.XxxApi(); // Allocate the API class we're going to use.
-   * var yyy = new BillingProfiles.Yyy(); // Construct a model instance.
+   * var xxxSvc = new BillingprofilesJavascriptSdk.XxxApi(); // Allocate the API class we're going to use.
+   * var yyy = new BillingprofilesJavascriptSdk.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -62,7 +62,7 @@
    * </pre>
    * </p>
    * @module index
-   * @version 1.0
+   * @version 1.0.14
    */
   var exports = {
     /**

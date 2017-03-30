@@ -31,15 +31,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.BillingProfiles);
+    factory(root.expect, root.BillingprofilesJavascriptSdk);
   }
-}(this, function(expect, BillingProfiles) {
+}(this, function(expect, BillingprofilesJavascriptSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new BillingProfiles.BillingProfilesCollectionInner();
+    instance = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -61,37 +61,37 @@
   describe('BillingProfilesCollectionInner', function() {
     it('should create an instance of BillingProfilesCollectionInner', function() {
       // uncomment below and update the code to test BillingProfilesCollectionInner
-      //var instane = new BillingProfiles.BillingProfilesCollectionInner();
-      //expect(instance).to.be.a(BillingProfiles.BillingProfilesCollectionInner);
+      //var instane = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInner();
+      //expect(instance).to.be.a(BillingprofilesJavascriptSdk.BillingProfilesCollectionInner);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new BillingProfiles.BillingProfilesCollectionInner();
+      //var instane = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInner();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new BillingProfiles.BillingProfilesCollectionInner();
+      //var instane = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInner();
       //expect(instance).to.be();
     });
 
     it('should have the property language (base name: "language")', function() {
       // uncomment below and update the code to test the property language
-      //var instane = new BillingProfiles.BillingProfilesCollectionInner();
+      //var instane = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInner();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instane = new BillingProfiles.BillingProfilesCollectionInner();
+      //var instane = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInner();
       //expect(instance).to.be();
     });
 
     it('should have the property addresses (base name: "addresses")', function() {
       // uncomment below and update the code to test the property addresses
-      //var instane = new BillingProfiles.BillingProfilesCollectionInner();
+      //var instane = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInner();
       //expect(instance).to.be();
     });
 

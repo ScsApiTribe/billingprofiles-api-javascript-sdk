@@ -31,15 +31,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.BillingProfiles);
+    factory(root.expect, root.BillingprofilesJavascriptSdk);
   }
-}(this, function(expect, BillingProfiles) {
+}(this, function(expect, BillingprofilesJavascriptSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new BillingProfiles.Error();
+    instance = new BillingprofilesJavascriptSdk.Error();
   });
 
   var getProperty = function(object, getter, property) {
@@ -61,37 +61,37 @@
   describe('Error', function() {
     it('should create an instance of Error', function() {
       // uncomment below and update the code to test Error
-      //var instane = new BillingProfiles.Error();
-      //expect(instance).to.be.a(BillingProfiles.Error);
+      //var instane = new BillingprofilesJavascriptSdk.Error();
+      //expect(instance).to.be.a(BillingprofilesJavascriptSdk.Error);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instane = new BillingProfiles.Error();
+      //var instane = new BillingprofilesJavascriptSdk.Error();
       //expect(instance).to.be();
     });
 
     it('should have the property detail (base name: "detail")', function() {
       // uncomment below and update the code to test the property detail
-      //var instane = new BillingProfiles.Error();
+      //var instane = new BillingprofilesJavascriptSdk.Error();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instane = new BillingProfiles.Error();
+      //var instane = new BillingprofilesJavascriptSdk.Error();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new BillingProfiles.Error();
+      //var instane = new BillingprofilesJavascriptSdk.Error();
       //expect(instance).to.be();
     });
 
     it('should have the property uuid (base name: "uuid")', function() {
       // uncomment below and update the code to test the property uuid
-      //var instane = new BillingProfiles.Error();
+      //var instane = new BillingprofilesJavascriptSdk.Error();
       //expect(instance).to.be();
     });
 

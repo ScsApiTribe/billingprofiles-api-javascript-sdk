@@ -1,4 +1,4 @@
-# BillingProfiles.BillingProfileEligibility
+# BillingprofilesJavascriptSdk.BillingProfileEligibility
 
 ## Properties
 Name | Type | Description | Notes

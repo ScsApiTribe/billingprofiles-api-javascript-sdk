@@ -31,10 +31,10 @@
     module.exports = factory(require('../ApiClient'), require('./BillingProfilesCollectionInnerLinks'));
   } else {
     // Browser globals (root is window)
-    if (!root.BillingProfiles) {
-      root.BillingProfiles = {};
+    if (!root.BillingprofilesJavascriptSdk) {
+      root.BillingprofilesJavascriptSdk = {};
     }
-    root.BillingProfiles.BillingProfilesCollectionInner = factory(root.BillingProfiles.ApiClient, root.BillingProfiles.BillingProfilesCollectionInnerLinks);
+    root.BillingprofilesJavascriptSdk.BillingProfilesCollectionInner = factory(root.BillingprofilesJavascriptSdk.ApiClient, root.BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks);
   }
 }(this, function(ApiClient, BillingProfilesCollectionInnerLinks) {
   'use strict';
@@ -45,7 +45,7 @@
   /**
    * The BillingProfilesCollectionInner model module.
    * @module model/BillingProfilesCollectionInner
-   * @version 1.0
+   * @version 1.0.14
    */
 
   /**

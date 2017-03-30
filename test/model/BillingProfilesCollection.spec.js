@@ -31,15 +31,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.BillingProfiles);
+    factory(root.expect, root.BillingprofilesJavascriptSdk);
   }
-}(this, function(expect, BillingProfiles) {
+}(this, function(expect, BillingprofilesJavascriptSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new BillingProfiles.BillingProfilesCollection();
+    instance = new BillingprofilesJavascriptSdk.BillingProfilesCollection();
   });
 
   var getProperty = function(object, getter, property) {
@@ -61,8 +61,8 @@
   describe('BillingProfilesCollection', function() {
     it('should create an instance of BillingProfilesCollection', function() {
       // uncomment below and update the code to test BillingProfilesCollection
-      //var instane = new BillingProfiles.BillingProfilesCollection();
-      //expect(instance).to.be.a(BillingProfiles.BillingProfilesCollection);
+      //var instane = new BillingprofilesJavascriptSdk.BillingProfilesCollection();
+      //expect(instance).to.be.a(BillingprofilesJavascriptSdk.BillingProfilesCollection);
     });
 
   });

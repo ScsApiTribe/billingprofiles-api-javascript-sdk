@@ -1,4 +1,4 @@
-# BillingProfiles.Error
+# BillingprofilesJavascriptSdk.Error
 
 ## Properties
 Name | Type | Description | Notes
