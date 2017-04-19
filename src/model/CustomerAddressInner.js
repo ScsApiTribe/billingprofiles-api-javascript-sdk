@@ -34,7 +34,7 @@
     if (!root.BillingprofilesJavascriptSdk) {
       root.BillingprofilesJavascriptSdk = {};
     }
-    root.BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerAddresses = factory(root.BillingprofilesJavascriptSdk.ApiClient);
+    root.BillingprofilesJavascriptSdk.CustomerAddressInner = factory(root.BillingprofilesJavascriptSdk.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -43,14 +43,14 @@
 
 
   /**
-   * The BillingProfilesCollectionInnerAddresses model module.
-   * @module model/BillingProfilesCollectionInnerAddresses
-   * @version 1.0.19
+   * The CustomerAddressInner model module.
+   * @module model/CustomerAddressInner
+   * @version 1.0.20
    */
 
   /**
-   * Constructs a new <code>BillingProfilesCollectionInnerAddresses</code>.
-   * @alias module:model/BillingProfilesCollectionInnerAddresses
+   * Constructs a new <code>CustomerAddressInner</code>.
+   * @alias module:model/CustomerAddressInner
    * @class
    */
   var exports = function() {
@@ -66,11 +66,11 @@
   };
 
   /**
-   * Constructs a <code>BillingProfilesCollectionInnerAddresses</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CustomerAddressInner</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/BillingProfilesCollectionInnerAddresses} obj Optional instance to populate.
-   * @return {module:model/BillingProfilesCollectionInnerAddresses} The populated <code>BillingProfilesCollectionInnerAddresses</code> instance.
+   * @param {module:model/CustomerAddressInner} obj Optional instance to populate.
+   * @return {module:model/CustomerAddressInner} The populated <code>CustomerAddressInner</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
@@ -103,7 +103,7 @@
 
   /**
    * The address type of the billing profile. It will either be a street address or a PO Box. A street address consists of either a houseName or a street and houseNumber. A PO Box address always defines a postBox. All addresses may contain a zip code and city.
-   * @member {module:model/BillingProfilesCollectionInnerAddresses.TypeEnum} type
+   * @member {module:model/CustomerAddressInner.TypeEnum} type
    */
   exports.prototype['type'] = undefined;
   /**

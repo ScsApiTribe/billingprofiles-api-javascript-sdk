@@ -25,12 +25,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/BillingProfileDetails', 'model/BillingProfileEligibility', 'model/BillingProfilesCollection', 'model/BillingProfilesCollectionInner', 'model/BillingProfilesCollectionInnerAddresses', 'model/BillingProfilesCollectionInnerLinks', 'model/Error', 'api/DefaultApi'], factory);
+    define(['ApiClient', 'model/BillingProfileDetails', 'model/BillingProfileEligibility', 'model/BillingProfilesCollection', 'model/BillingProfilesCollectionInner', 'model/BillingProfilesCollectionInnerLinks', 'model/CustomerAddress', 'model/CustomerAddressInner', 'model/Error', 'api/DefaultApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/BillingProfileDetails'), require('./model/BillingProfileEligibility'), require('./model/BillingProfilesCollection'), require('./model/BillingProfilesCollectionInner'), require('./model/BillingProfilesCollectionInnerAddresses'), require('./model/BillingProfilesCollectionInnerLinks'), require('./model/Error'), require('./api/DefaultApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/BillingProfileDetails'), require('./model/BillingProfileEligibility'), require('./model/BillingProfilesCollection'), require('./model/BillingProfilesCollectionInner'), require('./model/BillingProfilesCollectionInnerLinks'), require('./model/CustomerAddress'), require('./model/CustomerAddressInner'), require('./model/Error'), require('./api/DefaultApi'));
   }
-}(function(ApiClient, BillingProfileDetails, BillingProfileEligibility, BillingProfilesCollection, BillingProfilesCollectionInner, BillingProfilesCollectionInnerAddresses, BillingProfilesCollectionInnerLinks, Error, DefaultApi) {
+}(function(ApiClient, BillingProfileDetails, BillingProfileEligibility, BillingProfilesCollection, BillingProfilesCollectionInner, BillingProfilesCollectionInnerLinks, CustomerAddress, CustomerAddressInner, Error, DefaultApi) {
   'use strict';
 
   /**
@@ -62,7 +62,7 @@
    * </pre>
    * </p>
    * @module index
-   * @version 1.0.19
+   * @version 1.0.20
    */
   var exports = {
     /**
@@ -91,15 +91,20 @@
      */
     BillingProfilesCollectionInner: BillingProfilesCollectionInner,
     /**
-     * The BillingProfilesCollectionInnerAddresses model constructor.
-     * @property {module:model/BillingProfilesCollectionInnerAddresses}
-     */
-    BillingProfilesCollectionInnerAddresses: BillingProfilesCollectionInnerAddresses,
-    /**
      * The BillingProfilesCollectionInnerLinks model constructor.
      * @property {module:model/BillingProfilesCollectionInnerLinks}
      */
     BillingProfilesCollectionInnerLinks: BillingProfilesCollectionInnerLinks,
+    /**
+     * The CustomerAddress model constructor.
+     * @property {module:model/CustomerAddress}
+     */
+    CustomerAddress: CustomerAddress,
+    /**
+     * The CustomerAddressInner model constructor.
+     * @property {module:model/CustomerAddressInner}
+     */
+    CustomerAddressInner: CustomerAddressInner,
     /**
      * The Error model constructor.
      * @property {module:model/Error}

@@ -25,18 +25,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/BillingProfilesCollectionInnerLinks'], factory);
+    define(['ApiClient', 'model/BillingProfilesCollectionInnerLinks', 'model/CustomerAddress'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./BillingProfilesCollectionInnerLinks'));
+    module.exports = factory(require('../ApiClient'), require('./BillingProfilesCollectionInnerLinks'), require('./CustomerAddress'));
   } else {
     // Browser globals (root is window)
     if (!root.BillingprofilesJavascriptSdk) {
       root.BillingprofilesJavascriptSdk = {};
     }
-    root.BillingprofilesJavascriptSdk.BillingProfileDetails = factory(root.BillingprofilesJavascriptSdk.ApiClient, root.BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks);
+    root.BillingprofilesJavascriptSdk.BillingProfileDetails = factory(root.BillingprofilesJavascriptSdk.ApiClient, root.BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks, root.BillingprofilesJavascriptSdk.CustomerAddress);
   }
-}(this, function(ApiClient, BillingProfilesCollectionInnerLinks) {
+}(this, function(ApiClient, BillingProfilesCollectionInnerLinks, CustomerAddress) {
   'use strict';
 
 
@@ -45,7 +45,7 @@
   /**
    * The BillingProfileDetails model module.
    * @module model/BillingProfileDetails
-   * @version 1.0.19
+   * @version 1.0.20
    */
 
   /**
@@ -55,7 +55,7 @@
    * @param id {String} The unique identifier of the billing profile
    * @param type {String} The type of the billing profile (e.g.: mobile, ip, wireline).
    * @param links {Array.<module:model/BillingProfilesCollectionInnerLinks>} 
-   * @param addresses {Array.<String>} 
+   * @param addresses {module:model/CustomerAddress} 
    */
   var exports = function(id, type, links, addresses) {
     var _this = this;
@@ -91,7 +91,7 @@
         obj['links'] = ApiClient.convertToType(data['links'], [BillingProfilesCollectionInnerLinks]);
       }
       if (data.hasOwnProperty('addresses')) {
-        obj['addresses'] = ApiClient.convertToType(data['addresses'], ['String']);
+        obj['addresses'] = CustomerAddress.constructFromObject(data['addresses']);
       }
     }
     return obj;
@@ -117,7 +117,7 @@
    */
   exports.prototype['links'] = undefined;
   /**
-   * @member {Array.<String>} addresses
+   * @member {module:model/CustomerAddress} addresses
    */
   exports.prototype['addresses'] = undefined;
 

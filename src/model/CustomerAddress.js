@@ -25,74 +25,59 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/CustomerAddressInner'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./CustomerAddressInner'));
   } else {
     // Browser globals (root is window)
     if (!root.BillingprofilesJavascriptSdk) {
       root.BillingprofilesJavascriptSdk = {};
     }
-    root.BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks = factory(root.BillingprofilesJavascriptSdk.ApiClient);
+    root.BillingprofilesJavascriptSdk.CustomerAddress = factory(root.BillingprofilesJavascriptSdk.ApiClient, root.BillingprofilesJavascriptSdk.CustomerAddressInner);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, CustomerAddressInner) {
   'use strict';
 
 
 
 
   /**
-   * The BillingProfilesCollectionInnerLinks model module.
-   * @module model/BillingProfilesCollectionInnerLinks
+   * The CustomerAddress model module.
+   * @module model/CustomerAddress
    * @version 1.0.20
    */
 
   /**
-   * Constructs a new <code>BillingProfilesCollectionInnerLinks</code>.
-   * @alias module:model/BillingProfilesCollectionInnerLinks
+   * Constructs a new <code>CustomerAddress</code>.
+   * @alias module:model/CustomerAddress
    * @class
-   * @param rel {String} The name of the relationship.
-   * @param href {String} The relation to the customer number belonging to the billing profile.
+   * @extends Array
    */
-  var exports = function(rel, href) {
+  var exports = function() {
     var _this = this;
+    _this = new Array();
+    Object.setPrototypeOf(_this, exports);
 
-    _this['rel'] = rel;
-    _this['href'] = href;
+    return _this;
   };
 
   /**
-   * Constructs a <code>BillingProfilesCollectionInnerLinks</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CustomerAddress</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/BillingProfilesCollectionInnerLinks} obj Optional instance to populate.
-   * @return {module:model/BillingProfilesCollectionInnerLinks} The populated <code>BillingProfilesCollectionInnerLinks</code> instance.
+   * @param {module:model/CustomerAddress} obj Optional instance to populate.
+   * @return {module:model/CustomerAddress} The populated <code>CustomerAddress</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      ApiClient.constructFromObject(data, obj, CustomerAddressInner);
 
-      if (data.hasOwnProperty('rel')) {
-        obj['rel'] = ApiClient.convertToType(data['rel'], 'String');
-      }
-      if (data.hasOwnProperty('href')) {
-        obj['href'] = ApiClient.convertToType(data['href'], 'String');
-      }
     }
     return obj;
   }
 
-  /**
-   * The name of the relationship.
-   * @member {String} rel
-   */
-  exports.prototype['rel'] = undefined;
-  /**
-   * The relation to the customer number belonging to the billing profile.
-   * @member {String} href
-   */
-  exports.prototype['href'] = undefined;
 
 
 
