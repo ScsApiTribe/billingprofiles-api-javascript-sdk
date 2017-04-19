@@ -25,12 +25,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/BillingProfileDetails', 'model/BillingProfileEligibility', 'model/BillingProfilesCollection', 'model/BillingProfilesCollectionInner', 'model/BillingProfilesCollectionInnerLinks', 'model/Error', 'api/DefaultApi'], factory);
+    define(['ApiClient', 'model/BillingProfileDetails', 'model/BillingProfileEligibility', 'model/BillingProfilesCollection', 'model/BillingProfilesCollectionInner', 'model/BillingProfilesCollectionInnerAddresses', 'model/BillingProfilesCollectionInnerLinks', 'model/Error', 'api/DefaultApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/BillingProfileDetails'), require('./model/BillingProfileEligibility'), require('./model/BillingProfilesCollection'), require('./model/BillingProfilesCollectionInner'), require('./model/BillingProfilesCollectionInnerLinks'), require('./model/Error'), require('./api/DefaultApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/BillingProfileDetails'), require('./model/BillingProfileEligibility'), require('./model/BillingProfilesCollection'), require('./model/BillingProfilesCollectionInner'), require('./model/BillingProfilesCollectionInnerAddresses'), require('./model/BillingProfilesCollectionInnerLinks'), require('./model/Error'), require('./api/DefaultApi'));
   }
-}(function(ApiClient, BillingProfileDetails, BillingProfileEligibility, BillingProfilesCollection, BillingProfilesCollectionInner, BillingProfilesCollectionInnerLinks, Error, DefaultApi) {
+}(function(ApiClient, BillingProfileDetails, BillingProfileEligibility, BillingProfilesCollection, BillingProfilesCollectionInner, BillingProfilesCollectionInnerAddresses, BillingProfilesCollectionInnerLinks, Error, DefaultApi) {
   'use strict';
 
   /**
@@ -62,7 +62,7 @@
    * </pre>
    * </p>
    * @module index
-   * @version 1.0.14
+   * @version 1.0.19
    */
   var exports = {
     /**
@@ -90,6 +90,11 @@
      * @property {module:model/BillingProfilesCollectionInner}
      */
     BillingProfilesCollectionInner: BillingProfilesCollectionInner,
+    /**
+     * The BillingProfilesCollectionInnerAddresses model constructor.
+     * @property {module:model/BillingProfilesCollectionInnerAddresses}
+     */
+    BillingProfilesCollectionInnerAddresses: BillingProfilesCollectionInnerAddresses,
     /**
      * The BillingProfilesCollectionInnerLinks model constructor.
      * @property {module:model/BillingProfilesCollectionInnerLinks}

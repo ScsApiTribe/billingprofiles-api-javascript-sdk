@@ -42,7 +42,7 @@
   /**
    * Default service.
    * @module api/DefaultApi
-   * @version 1.0.14
+   * @version 1.0.19
    */
 
   /**

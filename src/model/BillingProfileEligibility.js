@@ -45,7 +45,7 @@
   /**
    * The BillingProfileEligibility model module.
    * @module model/BillingProfileEligibility
-   * @version 1.0.14
+   * @version 1.0.19
    */
 
   /**

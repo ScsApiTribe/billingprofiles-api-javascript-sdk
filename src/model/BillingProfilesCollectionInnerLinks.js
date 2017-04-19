@@ -45,7 +45,7 @@
   /**
    * The BillingProfilesCollectionInnerLinks model module.
    * @module model/BillingProfilesCollectionInnerLinks
-   * @version 1.0.14
+   * @version 1.0.19
    */
 
   /**

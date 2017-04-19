@@ -45,7 +45,7 @@
   /**
    * The BillingProfileDetails model module.
    * @module model/BillingProfileDetails
-   * @version 1.0.14
+   * @version 1.0.19
    */
 
   /**
