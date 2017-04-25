@@ -31,10 +31,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.BillingprofilesJavascriptSdk) {
-      root.BillingprofilesJavascriptSdk = {};
+    if (!root.SwisscomBillingprofilesJavascriptSdk) {
+      root.SwisscomBillingprofilesJavascriptSdk = {};
     }
-    root.BillingprofilesJavascriptSdk.CustomerAddressInner = factory(root.BillingprofilesJavascriptSdk.ApiClient);
+    root.SwisscomBillingprofilesJavascriptSdk.CustomerAddressInner = factory(root.SwisscomBillingprofilesJavascriptSdk.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -45,7 +45,7 @@
   /**
    * The CustomerAddressInner model module.
    * @module model/CustomerAddressInner
-   * @version 1.0.20
+   * @version 1.0.21
    */
 
   /**

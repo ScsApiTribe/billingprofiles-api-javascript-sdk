@@ -31,15 +31,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.BillingprofilesJavascriptSdk);
+    factory(root.expect, root.SwisscomBillingprofilesJavascriptSdk);
   }
-}(this, function(expect, BillingprofilesJavascriptSdk) {
+}(this, function(expect, SwisscomBillingprofilesJavascriptSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new BillingprofilesJavascriptSdk.BillingProfileDetails();
+    instance = new SwisscomBillingprofilesJavascriptSdk.BillingProfileDetails();
   });
 
   var getProperty = function(object, getter, property) {
@@ -61,37 +61,37 @@
   describe('BillingProfileDetails', function() {
     it('should create an instance of BillingProfileDetails', function() {
       // uncomment below and update the code to test BillingProfileDetails
-      //var instane = new BillingprofilesJavascriptSdk.BillingProfileDetails();
-      //expect(instance).to.be.a(BillingprofilesJavascriptSdk.BillingProfileDetails);
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.BillingProfileDetails();
+      //expect(instance).to.be.a(SwisscomBillingprofilesJavascriptSdk.BillingProfileDetails);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new BillingprofilesJavascriptSdk.BillingProfileDetails();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.BillingProfileDetails();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new BillingprofilesJavascriptSdk.BillingProfileDetails();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.BillingProfileDetails();
       //expect(instance).to.be();
     });
 
     it('should have the property language (base name: "language")', function() {
       // uncomment below and update the code to test the property language
-      //var instane = new BillingprofilesJavascriptSdk.BillingProfileDetails();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.BillingProfileDetails();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instane = new BillingprofilesJavascriptSdk.BillingProfileDetails();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.BillingProfileDetails();
       //expect(instance).to.be();
     });
 
     it('should have the property addresses (base name: "addresses")', function() {
       // uncomment below and update the code to test the property addresses
-      //var instane = new BillingprofilesJavascriptSdk.BillingProfileDetails();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.BillingProfileDetails();
       //expect(instance).to.be();
     });
 

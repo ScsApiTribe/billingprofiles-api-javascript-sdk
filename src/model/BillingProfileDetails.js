@@ -31,10 +31,10 @@
     module.exports = factory(require('../ApiClient'), require('./BillingProfilesCollectionInnerLinks'), require('./CustomerAddress'));
   } else {
     // Browser globals (root is window)
-    if (!root.BillingprofilesJavascriptSdk) {
-      root.BillingprofilesJavascriptSdk = {};
+    if (!root.SwisscomBillingprofilesJavascriptSdk) {
+      root.SwisscomBillingprofilesJavascriptSdk = {};
     }
-    root.BillingprofilesJavascriptSdk.BillingProfileDetails = factory(root.BillingprofilesJavascriptSdk.ApiClient, root.BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks, root.BillingprofilesJavascriptSdk.CustomerAddress);
+    root.SwisscomBillingprofilesJavascriptSdk.BillingProfileDetails = factory(root.SwisscomBillingprofilesJavascriptSdk.ApiClient, root.SwisscomBillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks, root.SwisscomBillingprofilesJavascriptSdk.CustomerAddress);
   }
 }(this, function(ApiClient, BillingProfilesCollectionInnerLinks, CustomerAddress) {
   'use strict';
@@ -45,7 +45,7 @@
   /**
    * The BillingProfileDetails model module.
    * @module model/BillingProfileDetails
-   * @version 1.0.20
+   * @version 1.0.21
    */
 
   /**

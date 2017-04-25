@@ -1,4 +1,4 @@
-# BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks
+# SwisscomBillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks
 
 ## Properties
 Name | Type | Description | Notes

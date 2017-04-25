@@ -1,4 +1,4 @@
-# BillingprofilesJavascriptSdk.BillingProfileDetails
+# SwisscomBillingprofilesJavascriptSdk.BillingProfileDetails
 
 ## Properties
 Name | Type | Description | Notes

@@ -31,15 +31,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.BillingprofilesJavascriptSdk);
+    factory(root.expect, root.SwisscomBillingprofilesJavascriptSdk);
   }
-}(this, function(expect, BillingprofilesJavascriptSdk) {
+}(this, function(expect, SwisscomBillingprofilesJavascriptSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new BillingprofilesJavascriptSdk.DefaultApi();
+    instance = new SwisscomBillingprofilesJavascriptSdk.DefaultApi();
   });
 
   var getProperty = function(object, getter, property) {

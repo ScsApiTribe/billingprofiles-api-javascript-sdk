@@ -31,15 +31,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.BillingprofilesJavascriptSdk);
+    factory(root.expect, root.SwisscomBillingprofilesJavascriptSdk);
   }
-}(this, function(expect, BillingprofilesJavascriptSdk) {
+}(this, function(expect, SwisscomBillingprofilesJavascriptSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new BillingprofilesJavascriptSdk.CustomerAddress();
+    instance = new SwisscomBillingprofilesJavascriptSdk.CustomerAddress();
   });
 
   var getProperty = function(object, getter, property) {
@@ -61,8 +61,8 @@
   describe('CustomerAddress', function() {
     it('should create an instance of CustomerAddress', function() {
       // uncomment below and update the code to test CustomerAddress
-      //var instane = new BillingprofilesJavascriptSdk.CustomerAddress();
-      //expect(instance).to.be.a(BillingprofilesJavascriptSdk.CustomerAddress);
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.CustomerAddress();
+      //expect(instance).to.be.a(SwisscomBillingprofilesJavascriptSdk.CustomerAddress);
     });
 
   });

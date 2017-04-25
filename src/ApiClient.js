@@ -31,17 +31,17 @@
     module.exports = factory(require('superagent'));
   } else {
     // Browser globals (root is window)
-    if (!root.BillingprofilesJavascriptSdk) {
-      root.BillingprofilesJavascriptSdk = {};
+    if (!root.SwisscomBillingprofilesJavascriptSdk) {
+      root.SwisscomBillingprofilesJavascriptSdk = {};
     }
-    root.BillingprofilesJavascriptSdk.ApiClient = factory(root.superagent);
+    root.SwisscomBillingprofilesJavascriptSdk.ApiClient = factory(root.superagent);
   }
 }(this, function(superagent) {
   'use strict';
 
   /**
    * @module ApiClient
-   * @version 1.0.20
+   * @version 1.0.21
    */
 
   /**

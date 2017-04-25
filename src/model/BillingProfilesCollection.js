@@ -31,10 +31,10 @@
     module.exports = factory(require('../ApiClient'), require('./BillingProfilesCollectionInner'));
   } else {
     // Browser globals (root is window)
-    if (!root.BillingprofilesJavascriptSdk) {
-      root.BillingprofilesJavascriptSdk = {};
+    if (!root.SwisscomBillingprofilesJavascriptSdk) {
+      root.SwisscomBillingprofilesJavascriptSdk = {};
     }
-    root.BillingprofilesJavascriptSdk.BillingProfilesCollection = factory(root.BillingprofilesJavascriptSdk.ApiClient, root.BillingprofilesJavascriptSdk.BillingProfilesCollectionInner);
+    root.SwisscomBillingprofilesJavascriptSdk.BillingProfilesCollection = factory(root.SwisscomBillingprofilesJavascriptSdk.ApiClient, root.SwisscomBillingprofilesJavascriptSdk.BillingProfilesCollectionInner);
   }
 }(this, function(ApiClient, BillingProfilesCollectionInner) {
   'use strict';
@@ -45,7 +45,7 @@
   /**
    * The BillingProfilesCollection model module.
    * @module model/BillingProfilesCollection
-   * @version 1.0.20
+   * @version 1.0.21
    */
 
   /**

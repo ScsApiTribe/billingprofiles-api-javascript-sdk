@@ -31,10 +31,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.BillingprofilesJavascriptSdk) {
-      root.BillingprofilesJavascriptSdk = {};
+    if (!root.SwisscomBillingprofilesJavascriptSdk) {
+      root.SwisscomBillingprofilesJavascriptSdk = {};
     }
-    root.BillingprofilesJavascriptSdk.Error = factory(root.BillingprofilesJavascriptSdk.ApiClient);
+    root.SwisscomBillingprofilesJavascriptSdk.Error = factory(root.SwisscomBillingprofilesJavascriptSdk.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -45,7 +45,7 @@
   /**
    * The Error model module.
    * @module model/Error
-   * @version 1.0.20
+   * @version 1.0.21
    */
 
   /**

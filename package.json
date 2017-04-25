@@ -1,6 +1,6 @@
 {
-  "name": "billingprofiles_javascript_sdk",
-  "version": "1.0.20",
+  "name": "swisscom_billingprofiles_javascript_sdk",
+  "version": "1.0.21",
   "description": "ERROR_UNKNOWN",
   "license": "Apache-2.0",
   "main": "src/index.js",

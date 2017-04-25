@@ -31,15 +31,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.BillingprofilesJavascriptSdk);
+    factory(root.expect, root.SwisscomBillingprofilesJavascriptSdk);
   }
-}(this, function(expect, BillingprofilesJavascriptSdk) {
+}(this, function(expect, SwisscomBillingprofilesJavascriptSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks();
+    instance = new SwisscomBillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks();
   });
 
   var getProperty = function(object, getter, property) {
@@ -61,19 +61,19 @@
   describe('BillingProfilesCollectionInnerLinks', function() {
     it('should create an instance of BillingProfilesCollectionInnerLinks', function() {
       // uncomment below and update the code to test BillingProfilesCollectionInnerLinks
-      //var instane = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks();
-      //expect(instance).to.be.a(BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks);
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks();
+      //expect(instance).to.be.a(SwisscomBillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks);
     });
 
     it('should have the property rel (base name: "rel")', function() {
       // uncomment below and update the code to test the property rel
-      //var instane = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks();
       //expect(instance).to.be();
     });
 
     it('should have the property href (base name: "href")', function() {
       // uncomment below and update the code to test the property href
-      //var instane = new BillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.BillingProfilesCollectionInnerLinks();
       //expect(instance).to.be();
     });
 

@@ -31,10 +31,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/BillingProfilesCollection'), require('../model/Error'), require('../model/BillingProfileDetails'), require('../model/BillingProfileEligibility'));
   } else {
     // Browser globals (root is window)
-    if (!root.BillingprofilesJavascriptSdk) {
-      root.BillingprofilesJavascriptSdk = {};
+    if (!root.SwisscomBillingprofilesJavascriptSdk) {
+      root.SwisscomBillingprofilesJavascriptSdk = {};
     }
-    root.BillingprofilesJavascriptSdk.DefaultApi = factory(root.BillingprofilesJavascriptSdk.ApiClient, root.BillingprofilesJavascriptSdk.BillingProfilesCollection, root.BillingprofilesJavascriptSdk.Error, root.BillingprofilesJavascriptSdk.BillingProfileDetails, root.BillingprofilesJavascriptSdk.BillingProfileEligibility);
+    root.SwisscomBillingprofilesJavascriptSdk.DefaultApi = factory(root.SwisscomBillingprofilesJavascriptSdk.ApiClient, root.SwisscomBillingprofilesJavascriptSdk.BillingProfilesCollection, root.SwisscomBillingprofilesJavascriptSdk.Error, root.SwisscomBillingprofilesJavascriptSdk.BillingProfileDetails, root.SwisscomBillingprofilesJavascriptSdk.BillingProfileEligibility);
   }
 }(this, function(ApiClient, BillingProfilesCollection, Error, BillingProfileDetails, BillingProfileEligibility) {
   'use strict';
@@ -42,7 +42,7 @@
   /**
    * Default service.
    * @module api/DefaultApi
-   * @version 1.0.20
+   * @version 1.0.21
    */
 
   /**

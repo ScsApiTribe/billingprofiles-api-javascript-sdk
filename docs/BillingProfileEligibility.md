@@ -1,4 +1,4 @@
-# BillingprofilesJavascriptSdk.BillingProfileEligibility
+# SwisscomBillingprofilesJavascriptSdk.BillingProfileEligibility
 
 ## Properties
 Name | Type | Description | Notes

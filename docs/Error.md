@@ -1,4 +1,4 @@
-# BillingprofilesJavascriptSdk.Error
+# SwisscomBillingprofilesJavascriptSdk.Error
 
 ## Properties
 Name | Type | Description | Notes

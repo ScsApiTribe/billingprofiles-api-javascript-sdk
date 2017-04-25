@@ -31,15 +31,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.BillingprofilesJavascriptSdk);
+    factory(root.expect, root.SwisscomBillingprofilesJavascriptSdk);
   }
-}(this, function(expect, BillingprofilesJavascriptSdk) {
+}(this, function(expect, SwisscomBillingprofilesJavascriptSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new BillingprofilesJavascriptSdk.BillingProfileEligibility();
+    instance = new SwisscomBillingprofilesJavascriptSdk.BillingProfileEligibility();
   });
 
   var getProperty = function(object, getter, property) {
@@ -61,25 +61,25 @@
   describe('BillingProfileEligibility', function() {
     it('should create an instance of BillingProfileEligibility', function() {
       // uncomment below and update the code to test BillingProfileEligibility
-      //var instane = new BillingprofilesJavascriptSdk.BillingProfileEligibility();
-      //expect(instance).to.be.a(BillingprofilesJavascriptSdk.BillingProfileEligibility);
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.BillingProfileEligibility();
+      //expect(instance).to.be.a(SwisscomBillingprofilesJavascriptSdk.BillingProfileEligibility);
     });
 
     it('should have the property eligible (base name: "eligible")', function() {
       // uncomment below and update the code to test the property eligible
-      //var instane = new BillingprofilesJavascriptSdk.BillingProfileEligibility();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.BillingProfileEligibility();
       //expect(instance).to.be();
     });
 
     it('should have the property reasonCode (base name: "reasonCode")', function() {
       // uncomment below and update the code to test the property reasonCode
-      //var instane = new BillingprofilesJavascriptSdk.BillingProfileEligibility();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.BillingProfileEligibility();
       //expect(instance).to.be();
     });
 
     it('should have the property reasonText (base name: "reasonText")', function() {
       // uncomment below and update the code to test the property reasonText
-      //var instane = new BillingprofilesJavascriptSdk.BillingProfileEligibility();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.BillingProfileEligibility();
       //expect(instance).to.be();
     });
 

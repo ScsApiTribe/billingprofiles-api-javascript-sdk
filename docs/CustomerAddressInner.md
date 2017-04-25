@@ -1,4 +1,4 @@
-# BillingprofilesJavascriptSdk.CustomerAddressInner
+# SwisscomBillingprofilesJavascriptSdk.CustomerAddressInner
 
 ## Properties
 Name | Type | Description | Notes

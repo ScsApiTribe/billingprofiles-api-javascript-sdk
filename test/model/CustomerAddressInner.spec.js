@@ -31,15 +31,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.BillingprofilesJavascriptSdk);
+    factory(root.expect, root.SwisscomBillingprofilesJavascriptSdk);
   }
-}(this, function(expect, BillingprofilesJavascriptSdk) {
+}(this, function(expect, SwisscomBillingprofilesJavascriptSdk) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new BillingprofilesJavascriptSdk.CustomerAddressInner();
+    instance = new SwisscomBillingprofilesJavascriptSdk.CustomerAddressInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -61,49 +61,49 @@
   describe('CustomerAddressInner', function() {
     it('should create an instance of CustomerAddressInner', function() {
       // uncomment below and update the code to test CustomerAddressInner
-      //var instane = new BillingprofilesJavascriptSdk.CustomerAddressInner();
-      //expect(instance).to.be.a(BillingprofilesJavascriptSdk.CustomerAddressInner);
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.CustomerAddressInner();
+      //expect(instance).to.be.a(SwisscomBillingprofilesJavascriptSdk.CustomerAddressInner);
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new BillingprofilesJavascriptSdk.CustomerAddressInner();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.CustomerAddressInner();
       //expect(instance).to.be();
     });
 
     it('should have the property houseName (base name: "houseName")', function() {
       // uncomment below and update the code to test the property houseName
-      //var instane = new BillingprofilesJavascriptSdk.CustomerAddressInner();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.CustomerAddressInner();
       //expect(instance).to.be();
     });
 
     it('should have the property street (base name: "street")', function() {
       // uncomment below and update the code to test the property street
-      //var instane = new BillingprofilesJavascriptSdk.CustomerAddressInner();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.CustomerAddressInner();
       //expect(instance).to.be();
     });
 
     it('should have the property houseNumber (base name: "houseNumber")', function() {
       // uncomment below and update the code to test the property houseNumber
-      //var instane = new BillingprofilesJavascriptSdk.CustomerAddressInner();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.CustomerAddressInner();
       //expect(instance).to.be();
     });
 
     it('should have the property postBox (base name: "postBox")', function() {
       // uncomment below and update the code to test the property postBox
-      //var instane = new BillingprofilesJavascriptSdk.CustomerAddressInner();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.CustomerAddressInner();
       //expect(instance).to.be();
     });
 
     it('should have the property zip (base name: "zip")', function() {
       // uncomment below and update the code to test the property zip
-      //var instane = new BillingprofilesJavascriptSdk.CustomerAddressInner();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.CustomerAddressInner();
       //expect(instance).to.be();
     });
 
     it('should have the property city (base name: "city")', function() {
       // uncomment below and update the code to test the property city
-      //var instane = new BillingprofilesJavascriptSdk.CustomerAddressInner();
+      //var instane = new SwisscomBillingprofilesJavascriptSdk.CustomerAddressInner();
       //expect(instance).to.be();
     });
 
